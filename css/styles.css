@@ -401,7 +401,9 @@ background: var(--light-mode-color);
     align-items: center;
     transition: border-color var(--duration-ms) var(--cubic-bezier) , fill var(--duration-ms) var(--cubic-bezier);
 }
-
+.customers-logo{
+    transition: fill var(--duration-ms) var(--cubic-bezier);
+}
 .link-customers:is(:hover,:focus){
 border-color: var(--accent-focus-color);
 }
@@ -436,12 +438,12 @@ fill: var(--accent-focus-color);
     border: 1px solid var(--accent-cornflower-color);
     border-radius: 4px;
     cursor: pointer;
-    transition: color var(--duration-ms) var(--cubic-bezier), box-shadow var(--duration-ms) var(--cubic-bezier);
+    transition: color var(--duration-ms) var(--cubic-bezier), box-shadow var(--duration-ms) var(--cubic-bezier), background-color var(--duration-ms) var(--cubic-bezier), border var(--duration-ms) var(--cubic-bezier)  ;
 }
 .button-title:hover,
 .button-title:focus {
     color: var(--text-white-color);
-    background: var(--accent-focus-color);
+    background-color: var(--accent-focus-color);
     border: 1px solid var(--botton-border);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -457,9 +459,9 @@ fill: var(--accent-focus-color);
     flex-basis: calc((100% - 2 * 24px) / 3);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-.portfolio-site> .card-list:hover,.portfolio-site> .card-list:focus{
+.portfolio-site  .card-list:hover,.portfolio-site> .card-list:focus{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+} 
 .card-list:nth-child(3n){
     margin-right: 0;
 }
@@ -510,9 +512,17 @@ fill: var(--accent-focus-color);
     transform: translateY(100%);
     transition: transform var(--duration-ms) var(--cubic-bezier);
 }
-.card-list:hover .portfolio-top-text {
+.ptfl-top:is(:hover, :focus){
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.card-list:is(:hover,:focus) .portfolio-top-text {
     transform: translateY(0%);
 }
+.ptfl-top:is(:hover, :focus) .portfolio-top-text{
+    transform: translateY(0%);
+}
+
 
 
 
@@ -603,6 +613,7 @@ fill: var(--accent-focus-color);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    transition-timing-function: var(--cubic-bezier);
 }
 .modal{
     position: absolute;
@@ -614,6 +625,8 @@ fill: var(--accent-focus-color);
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0 0 0 /14%), 0px 1px 3px rgba(0 0 0 /12%), 0px 2px 1px rgba(0 0 0 /20%);
     border-radius: 4px;
+    padding: 15px;
+    transition-property: transform;
     transition: transform var(--duration-ms) var(--cubic-bezier);
 }
 .modal-close{
