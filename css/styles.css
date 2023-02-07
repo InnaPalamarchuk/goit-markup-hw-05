@@ -86,6 +86,7 @@ cursor: pointer;
 } 
 .link {
     text-decoration: none;
+    color: var(--title-text-color);
 }
 
 /* site-nav */
@@ -121,7 +122,7 @@ cursor: pointer;
     letter-spacing: 0.02em;
     padding-top: 24px;
     padding-bottom: 24px;
-    transition: color var(--duration-ms) var(--cubic-bezier);
+    transition: color var(--duration-ms) var(--cubic-bezier), color var(--duration-ms), var(--cubic-bezier);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -301,7 +302,7 @@ cursor: pointer;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    transition: background-color var(--duration-ms) var(--cubic-bezier), fill var(--duration-ms) var(--cubic-bezier);
+    transition: background-color var(--duration-ms) var(--cubic-bezier);
 }
 .soc-list-link:is(:hover,:focus){
 background-color: var(--accent-focus-color);
@@ -453,7 +454,6 @@ fill: var(--accent-focus-color);
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-
 }
 .card-list{
     flex-basis: calc((100% - 2 * 24px) / 3);
