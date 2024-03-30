@@ -787,9 +787,11 @@ border-color: #4D5AE5;
 }
 
   
-   .modal-checkbox{
-    margin-bottom: 24px;
-} 
+    .modal-checkbox {
+     margin-bottom: 24px;
+    }
+
+
   .modal-span{
     width: 16px;
     height: 16px;
@@ -858,11 +860,5 @@ border-color: #4D5AE5;
         .modal-send-btn:focus{
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         background-color: #404bbf;
-        }
-
-
-        
-        .modal-checkbox{
-          margin-bottom: 24px;
         }
   
