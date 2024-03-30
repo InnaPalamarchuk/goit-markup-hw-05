@@ -721,7 +721,7 @@ border-color: #4D5AE5;
   fill: #4D5AE5;
 }
 
-modal-field{
+.modal-field{
   margin-bottom: 8px;
 }
 
@@ -786,10 +786,10 @@ modal-field{
     align-items: center;
 }
 
+  
    .modal-checkbox{
     margin-bottom: 24px;
-}
-
+} 
   .modal-span{
     width: 16px;
     height: 16px;
@@ -802,8 +802,7 @@ modal-field{
     align-items: center;
     justify-content: center;
     fill: transparent;
-    
-  }
+  } 
 
     .check-link {
     font-family: "Roboto", sans-serif;
@@ -827,12 +826,13 @@ modal-field{
       fill: #f4f4fd;
      }
 
+     
      .modal-check-icon{
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-     }
+     } 
 
         .modal-send-btn{
           font-weight: 500;
@@ -859,7 +859,10 @@ modal-field{
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         background-color: #404bbf;
         }
+
+
         
         .modal-checkbox{
           margin-bottom: 24px;
         }
+  
