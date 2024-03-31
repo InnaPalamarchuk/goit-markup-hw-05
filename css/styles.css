@@ -782,7 +782,6 @@
     letter-spacing: 0.04em;
     color: #8e8f99;
     min-width: 388px;
-    display: inline-flex;
     align-items: center;
    }
 
@@ -791,7 +790,7 @@
     }
 
 
-    .modal-span-text{
+    .check-box-span{
     display: inline-flex;
     align-items: center;
     justify-content: center;
